@@ -255,7 +255,7 @@ body
       z-index: 2
       width: 100%
       display: flex
-      justify-content: space-between
+      justify-content: center
       align-items: flex-end
     &-txt
       font-family: $font-suisse-semb
@@ -265,7 +265,7 @@ body
       text-transform: uppercase
       letter-spacing: 0.03em
       position: absolute
-      top: 210px
+      top: 190px
       left: 190px
       z-index: 4
       span
@@ -278,7 +278,7 @@ body
       height: 910px
       position: relative
       flex-shrink: 0
-      right: 264px
+      right: -340px
       bottom: -9px
       &::before
         content: ''
@@ -435,43 +435,16 @@ body
           background: url("../img/wheel-bottom-mob.png") no-repeat 0 0/contain
         @media (max-width: 920px) and (orientation: landscape) and (max-height: 450px)
           background: url("../img/wheel-bottom-mob.png") no-repeat 0 0/contain
-    &-woman
-      &-txt
-        position: absolute
-        padding: 38px 20px 30px 39px
-        bottom: 58vh
-        right: 219px
-        transform: scale(1.1)
-        z-index: 4
-        width: 219px
-        height: 195px
-        background: url("../img/bubble.png") no-repeat 0 0/contain
-        font-family: $font-suisse-bold
-        font-size: 20px
-        line-height: 28px
-        color: $blue
-        letter-spacing: 0.03em
-        text-transform: uppercase
-        opacity: 0
-        animation: 3.5s bulbs-opacityEnd ease
-        animation-fill-mode: forwards
-        animation-delay: 1s
-      picture
-        height: 63.4vh
-        position: absolute
-        bottom: 0
-        right: 93px
-        z-index: 4
-        img
-          height: 100%
-    &-man
-      flex: 1 1 auto
+    &-man2
       pointer-events: none
+      position: relative
+      display: none
+      z-index: 3
       &-txt
-        padding: 55px 18px 9px 32px
+        padding: 43px 18px 13px 37px
         position: absolute
-        bottom: 38vh
-        left: 432px
+        bottom: 46.5vh
+        left: 150px
         transform: scale(1.2)
         z-index: 5
         width: 219px
@@ -487,17 +460,49 @@ body
         animation: 3.5s bulbs-opacityEnd ease
         animation-fill-mode: forwards
       picture
-        height: 54vh
+        height: 60vh
         position: absolute
         bottom: 0
-        left: 203px
+        left: -380px
+        z-index: 4
+        width: 800px
+        img
+          height: 100%
+    &-man
+      pointer-events: none
+      position: relative
+      z-index: 3
+      &-txt
+        padding: 43px 18px 13px 37px
+        position: absolute
+        bottom: 41.5vh
+        left: 150px
+        transform: scale(1.2)
+        z-index: 5
+        width: 219px
+        height: 195px
+        background: url("../img/bubble-2.png") no-repeat 0 0/contain
+        font-family: $font-suisse-bold
+        font-size: 20px
+        line-height: 28px
+        color: $blue
+        letter-spacing: 0.03em
+        text-transform: uppercase
+        opacity: 0
+        animation: 3.5s bulbs-opacityEnd ease
+        animation-fill-mode: forwards
+      picture
+        height: 57vh
+        position: absolute
+        bottom: 0
+        left: -360px
         z-index: 4
         width: 800px
         img
           height: 100%
   &__footer
     position: absolute
-    bottom: 50px
+    bottom: 40px
     left: 60px
     z-index: 4
     display: flex
