@@ -79,17 +79,6 @@ body
     right: 0
     z-index: 10
     transition: opacity .7s linear, visibility .5s linear
-    &-woman
-      //height: 860px
-      height: 80%
-      position: absolute
-      bottom: -1px
-      right: 50%
-      transform: translateX(122%)
-      z-index: 1
-      pointer-events: none
-      img
-        height: 100%
   &__firstWin,
   &__secondWin
     &-salut
@@ -103,6 +92,7 @@ body
         opacity: 0
         animation: 4s infinite salut ease
         animation-delay: 0s
+        z-index: 0
       &-two
         position: absolute
         top: -143px
@@ -113,6 +103,7 @@ body
         opacity: 0
         animation: 4s infinite salut ease
         animation-delay: 2s
+        z-index: 0
       &-three
         position: absolute
         top: -95px
@@ -123,6 +114,7 @@ body
         opacity: 0
         animation: 4s infinite salut ease
         animation-delay: 1s
+        z-index: 0
       &-fourth
         position: absolute
         top: -145px
@@ -133,6 +125,7 @@ body
         opacity: 0
         animation: 4s infinite salut ease
         animation-delay: 1.5s
+        z-index: 0
       &-five
         position: absolute
         top: -13px
@@ -143,14 +136,16 @@ body
         opacity: 0
         animation: 4s infinite salut ease
         animation-delay: 2.5s
+        z-index: 0
 
     &-info
       display: flex
       flex-direction: column
       align-items: center
-      margin-top: 60px
+      margin-top: 220px
       transform: scale(1.3)
       position: relative
+      z-index: 3
     &-prize
       width: 495px
       height: 317px
@@ -160,6 +155,7 @@ body
       align-items: center
       justify-content: center
       position: relative
+      z-index: 2
       &::after
         content: ''
         position: absolute
@@ -198,6 +194,23 @@ body
       text-transform: uppercase
       color: $magenta
       text-shadow: 0px 0px 35px rgba(255, 38, 126, 0.5), 0px 0px 14px #FF267E, 0px 2px 5px rgba(0, 0, 0, 0.3)
+    &-win2
+      font-family: $font-rubik
+      padding: 10px 0 0 25px
+      font-size: 27px
+      line-height: 14px
+      color: $magenta
+      text-transform: uppercase
+      text-align: center
+      white-space: nowrap
+      text-shadow: 0px 0px 35px rgba(255, 38, 126, 0.5), 0px 0px 14px #FF267E, 0px 2px 5px rgba(0, 0, 0, 0.3)
+      span
+        font-family: $font-rubik
+        font-size: 20px
+        line-height: 38px
+        color: $grey
+        letter-spacing: 0.03em
+        text-transform: uppercase
     &-btn
       display: inline-block
       padding: 6px
@@ -229,6 +242,35 @@ body
       letter-spacing: 0.03em
       color: $grey
       margin-left: 10px
+    &-image
+      position: absolute
+      top: -144px
+      left: 50%
+      transform: translateX(-50%)
+      z-index: 1
+      &-wrap
+        position: relative
+      &-sam
+        max-width: 210px
+      &-txt
+        background: url("../img/bubble-2.png") no-repeat 0% 0%/contain
+        width: 160px
+        height: 145px
+        font-family: $font-suisse-bold
+        padding: 21px 5px 10px 31px
+        font-size: 15px
+        line-height: 20px
+        letter-spacing: 0.03em
+        text-transform: uppercase
+        color: $blue
+        position: absolute
+        top: -50px
+        right: -160px
+
+
+
+
+
   &__secondWin
     &-txt
       margin-top: -40px
