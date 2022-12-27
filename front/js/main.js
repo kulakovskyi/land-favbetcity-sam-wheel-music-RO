@@ -13,16 +13,14 @@ const playBtn = document.querySelector('.bonus__main-wheel-btn'),
       audio = document.querySelector('.audio'),
       man1 = document.querySelector('.bonus__main-man'),
       man2 = document.querySelector('.bonus__main-man2'),
-      bubbleText = document.querySelector('.bonus__main-woman-txt'),
       audioFireworks = document.querySelector('.audio-fireworks'),
       audioWheel = document.querySelector('.audio-wheel'),
       audioWin = document.querySelector('.audio-coin')
 
-// audio.volume = '0.4'
-// audioFireworks.volume= '0.5'
+audio.volume = '0.4'
+audioFireworks.volume= '0.5'
 
-audio.volume = '0'
-audioFireworks.volume= '0'
+
 
 musicBtn.addEventListener('click', ()=>{
     if(musicBtn.classList.contains('on')){
